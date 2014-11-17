@@ -1,0 +1,48 @@
+header {
+  border-bottom: 1px solid;
+  padding: 10px;
+
+  background: #eee;
+
+  // flexbox properties
+  display: flex;
+  justify-content: center;
+
+  h1 {
+    // font-size: 72px;
+    display: block;
+    margin: auto;
+  }
+
+  nav {
+    display: block;
+    // float: right;
+    margin: auto;
+
+    ul {
+      display: flex;
+      li {
+        display: block;
+
+        border: 0;
+        border-right: 1px solid;
+        &:last-child {
+          border-right: 0 none;
+        }
+
+        a {
+          display: block;
+
+          padding: 10px 20px;
+          text-decoration: none;
+          width: 100%;
+          height: 100%;
+
+          &:hover {
+            background:#ccc;
+          }
+        }
+      }
+    }
+  }
+}

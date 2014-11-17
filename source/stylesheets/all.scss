@@ -1,0 +1,58 @@
+@import 'mixins';
+@import 'header';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lekton', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-family: 'Molengo', Georgia, Times, serif;
+}
+
+/* container object for the card */
+.card {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+/* my personal photo */
+.headshot {
+  float: left;
+  width: 33%;
+}
+/* main information box */
+.info {
+  font-family: 'Lekton', Helvetica, Arial, sans-serif;
+  float: right;
+  width: 67%;
+  padding: 0 10px;
+}
+
+.name {
+  font-size: 32px;
+}
+
+@media screen and (max-width: 720px) {
+  .headshot {
+    width: 100%;
+    margin: 20px auto;
+  }
+}
+@media screen and (max-width: 720px) {
+  .info {
+    width: 100%;
+    margin: 0 auto;
+    float: left;
+    text-align: center
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .card {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}

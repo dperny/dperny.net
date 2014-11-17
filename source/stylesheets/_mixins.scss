@@ -1,0 +1,4 @@
+@mixin constrain($width) {
+  max-width: $width;
+  margin: 0 auto;
+}
