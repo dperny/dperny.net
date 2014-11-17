@@ -41,11 +41,18 @@
 # end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def ghbutton(repo, opts={})
+    user = opts[:user] || "dperny"
+    type = opts[:type] || "fork"
+    width = opts[:width] || 156
+    height = opts[:height] || 30
+    count = opts[:count].nil? ? true : opts[:count]
+    size = opts[:size] || "&size=large"
+
+    "<iframe src=\"http://ghbtns.com/github-btn.html?user=#{user}&repo=#{repo}&type=#{type}&count=#{count}#{size}\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"0\" width=\"#{width}\" height=\"#{height}\"></iframe>"
+  end
+end
 
 set :css_dir, 'stylesheets'
 
@@ -69,4 +76,10 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+end
+
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.remote = "git@github.com:dperny/dperny.github.io.git"
+  deploy.branch = "master"
 end

@@ -1,6 +1,8 @@
 @import 'mixins';
 @import 'header';
+@import 'main';
 
+/* BEST RULE EVER. TRULY I HAVE FOUND LIFE ANEW */
 * {
   box-sizing: border-box;
 }
@@ -9,7 +11,8 @@ body {
   font-family: 'Lekton', Helvetica, Arial, sans-serif;
 }
 
-h1 {
+/* All headers alwasy Molengo */
+h1,h2,h3,h4,h5,h6 {
   font-family: 'Molengo', Georgia, Times, serif;
 }
 
@@ -18,11 +21,24 @@ h1 {
   max-width: 1024px;
   margin: 0 auto;
 }
+
 /* my personal photo */
-.headshot {
+img.me {
   float: left;
-  width: 33%;
+  width: 150px;
+  margin: 10px;
 }
+
+article {
+  @include constrain(1024px);
+}
+
+.bio {
+  h2 {
+    padding: 10px;
+  }
+}
+
 /* main information box */
 .info {
   font-family: 'Lekton', Helvetica, Arial, sans-serif;

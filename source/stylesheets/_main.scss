@@ -1,0 +1,38 @@
+main {
+  @include constrain(1024px);
+
+  padding: 10px;
+
+  h2 {
+    padding: 10px;
+  }
+
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    figure {
+      flex: 1;
+      min-width: 300px;
+
+      display: flex;
+      justify-content: center;
+
+      padding: 10px;
+      img {
+        max-width: 300px;
+        max-height: 300px;
+        width: auto;
+        height: auto;
+      }
+    }
+
+    .desc {
+      padding: 10px;
+      min-width: 300px;
+      flex: 2;
+    }
+  }
+}
