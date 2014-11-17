@@ -7,6 +7,7 @@ header {
   // flexbox properties
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 
   h1 {
     // font-size: 72px;
@@ -16,18 +17,20 @@ header {
 
   nav {
     display: block;
-    // float: right;
     margin: auto;
 
     ul {
       display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+
       li {
         display: block;
 
         border: 0;
-        border-right: 1px solid;
-        &:last-child {
-          border-right: 0 none;
+        border-left: 1px solid;
+        &:first-child {
+          border-left: 0 none;
         }
 
         a {
