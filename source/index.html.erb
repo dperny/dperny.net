@@ -1,18 +1,48 @@
 <!-- My Bio -->
 <main>
-  <article class="bio">
-    <section> 
+  <article class="stripe">
+    <div class="stripe">
+    <h2>About Me</h2>
+    <section class="with-fig"> 
       <figure>
-        <img src="/images/me.jpg">
+        <img src="/images/me.jpg" alt="A picture of me.">
       </figure>
       <div class="desc">
-      <h3>About Me</h3>
+      <h3>Bio</h3>
         <p>My name is Drew Erny, and I'm a developer. I have a ton of experience in 
         full-stack web, but there's nothing I can't learn and no tricks I can't be 
         taught.I have an intermediate knowledge of Python, Ruby, Java, C, Javascript, and
         SQL.
         </p>
       </div>
+    </section>
+    </div>
+    <div class="stripe">
     <section>
+      <figure>
+        <h3>Skills</h3>
+      </figure>
+      <div class="desc">
+        <ul>
+          <li><em>Development:</em> Ruby, Python, C, Java, Scheme</li>
+          <li><em>Web:</em> HTML5/CSS3/Javascript frontend, Ruby on Rails and PHP backend, Haml, SASS, etc.</li>
+          <li><em>Software and Technology:</em> Strong understanding of Unix (including servers), bash, zsh, git, vim, and tmux</li>
+          <li><em>Tutoring:</em> Run unofficial computer science study sessions and one-on-one tutoring for classmates, peers, and underclassmen.</li>
+        </ul>
+      </div>
+    </section>
+    </div>
+    <div class="stripe">
+    <section>
+      <h3>Career Experience</h3>
+      <%= lorem.paragraphs 1 %>
+    </section>
+    </div>
+    <div class="stripe">
+    <section>
+      <h3>Education</h3>
+      <%= lorem.paragraphs 1 %>
+    </section>
+    </div>
   </article>
 </main>
