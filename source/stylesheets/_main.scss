@@ -3,7 +3,7 @@ main {
 
   h2 {
     @include constrain(1024px);
-    padding: 10px;
+    padding: 10px 0;
   }
 
   section {
