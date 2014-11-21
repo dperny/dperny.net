@@ -1,6 +1,8 @@
 @import 'mixins';
 @import 'header';
 @import 'main';
+@import 'footer';
+
 
 /* BEST RULE EVER. TRULY I HAVE FOUND LIFE ANEW */
 * {
@@ -9,6 +11,14 @@
 
 body {
   font-family: 'Lekton', Helvetica, Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  padding: 0;
+  flex: 1;
 }
 
 /* All headers alwasy Molengo */

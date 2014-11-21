@@ -1,0 +1,21 @@
+footer {
+  background: #000;
+  width: 100%;
+  
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+
+  .forkme {
+    color: #fff;
+    a {
+      img {
+        margin: 0 5px;
+      }
+      color: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

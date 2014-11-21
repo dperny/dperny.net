@@ -1,5 +1,4 @@
 main {
-  padding: 0px;
   // @include constrain(1024px);
 
   h2 {
@@ -21,12 +20,7 @@ main {
       flex: 1;
       min-width: 300px;
 
-      /*
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      */
-      text-align: right;
+      text-align: center;
 
       padding: 10px;
       img {
