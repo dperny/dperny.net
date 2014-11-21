@@ -8,6 +8,7 @@ main {
 
   section {
     @include constrain(1024px);
+    padding: 0 10px;
   }
 
   section.with-fig {
