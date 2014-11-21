@@ -40,6 +40,9 @@
 #   activate :livereload
 # end
 
+# turn on autoprefixer
+activate :autoprefixer
+
 # Methods defined in the helpers block are available in templates
 helpers do
   def ghbutton(repo, opts={})
